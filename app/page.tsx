@@ -57,7 +57,7 @@ const projects = [
     title: "Video Deepfake Detector",
     description:
       "A deepfake detection application that leverages a hybrid CNN-RNN model to analyze live or uploaded videos and classify them.",
-    image: "/deepfakeDetect1.jpg",
+    image: "./deepfakeDetect1.jpg",
     tags: ["Flask", "Python", "TensorFlow", "ChatGPT API"],
     buttonLink: "/projects/Video-Deepfake-Detector",
   },
@@ -66,7 +66,7 @@ const projects = [
     title: "Bussing",
     description:
       "Bussing is an Android app that provides users with the up-to-date Singapore bus arrival times and a map for easy bus stop location visualization.",
-    image: "/busTiming1.png",
+    image: "./busTiming1.png",
     tags: ["Android Studio", "Java", "Google Maps API", "LTA DataMall API"],
     buttonLink: "/projects/Bussing",
   },

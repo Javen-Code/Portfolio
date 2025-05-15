@@ -17,7 +17,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <title>Javen's Portfolio</title>
+        <link rel="icon" href="favicon.png" type="image/png"></link>
       </head>
       <body className="layout page-container">
         <div className="layout">
