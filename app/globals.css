@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  flex: 1; 
+}
+
+main {
+  flex: 1;
+  align-self: center;
+  margin: 0 30px;
+}
+
+.ant-layout,
+.ant-typography,
+.ant-menu,
+.ant-btn,
+a {
+  font-family: var(--font-family) !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  width: 70%;
+  padding-right: 10%;
+}
+
+.right-section {
+  width: 30%;
+}
+
+.profile-img {
+  float: right;
+  border-radius: 15px;
+}
+
+.featured-div {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  main {
+    margin: 0 30px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .profile-img {
+    float: left;
+  }
+
+  .featured-div {
+    display: block;
+    justify-content: flex-start
+  }
+
+  .project-card {
+    width: 100% !important;
+  }
+
+  .waving-hand {
+    margin-top: 100px;
+    margin-left: -105px !important;
+  }
+
+}
+
+.custom-tab-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card {
+  background-color: #ffffff00;
+  padding: 0px;
+  border: 0px;
+}
+
+.experience-card .ant-card-body {
+  background-color: #ffffff00;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.education-card {
+  background-color: #ffffff00;
+  padding: 0px;
+  border: 0px;
+}
+
+.education-card .ant-card-body {
+  background-color: #ffffff00;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.custom-tabs .ant-card-body div div {
+  margin-left: 15px;
+}
+
+.custom-tabs-container button {
+  width: 50%;
+  height: 30px;
+  border: 0px;
+  border-radius: 7px;
+  background-color: #ffffff00;
+  color: #8f8e8e;
+  font-weight: 425;
+}
+
+.custom-tab-button.active {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.project-card .ant-card-bordered {
+  padding: 0px;
+  border: 0px;
+}
+
+.project-card div img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .ant-card-body {
+  background-color: #ffffff00;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.custom-tag {
+  background-color: #f3f4f6;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+
+.header-button {
+  color: #8f8e8e;
+}
+
+.header-button:hover {
+  color: #000000 !important;
+}
+
+.waving-hand {
+  animation: wave 1.5s infinite !important;
+  display: inline-block;
+  transform-origin: bottom;
+  margin-top: 100px;
+  margin-left: -75px;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+i {
+  color: #8f8e8e
+}
+
+i:hover {
+  color: black
+}
+
+.text-content{
+  font-size: 16px;
+  color: #374151;
+}
+
+.project-img{
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
