@@ -9,7 +9,7 @@ const { Content } = Layout;
 const project = {
   id: "Portfolio",
   title: "Portfolio Website",
-  image: "./portfolioWeb1.png",
+  image: "/portfolioWeb1.png",
   tags: ["Next.js", "CSS", "AntD"],
   buttonLink: "",
 };

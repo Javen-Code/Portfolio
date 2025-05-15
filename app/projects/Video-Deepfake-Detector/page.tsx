@@ -11,7 +11,7 @@ const project = {
   title: "Video Deepfake Detector",
   description:
     "A deepfake detection application that leverages a hybrid CNN-RNN model to analyze live or uploaded videos and classify them.",
-  image: "./deepfakeDetect1.jpg",
+  image: "/deepfakeDetect1.jpg",
   tags: ["Flask", "Python", "TensorFlow", "ChatGPT API"],
   buttonLink: "",
 };

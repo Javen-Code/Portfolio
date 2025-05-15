@@ -11,7 +11,7 @@ const project = {
   title: "Bussing",
   description:
     "Bussing is an Android app that provides users with up-to-date Singapore bus arrival times and a map for easy bus stop location visualization.",
-  image: "./busTiming1.png",
+  image: "/busTiming1.png",
   tags: ["Android Studio", "Java", "Google Maps API", "LTA DataMall API"],
   buttonLink: "",
 };

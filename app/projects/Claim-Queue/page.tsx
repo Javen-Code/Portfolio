@@ -11,7 +11,7 @@ const project = {
   title: "Claim Queue |  FYP at NCS",
   description:
     "A web module within NPHC (National Platform for Healthcare Claims) that allows users to track their claim status and position in real time.",
-  image: "./claimQueue1.png",
+  image: "/claimQueue1.png",
   tags: ["Next.js", "Kotlin", "Springboot", "AntD"],
   buttonLink: "",
 };
