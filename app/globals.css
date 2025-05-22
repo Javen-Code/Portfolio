@@ -16,8 +16,8 @@ body {
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  flex: 1; 
+  min-height: 100vh;
+  flex: 1;
 }
 
 main {
@@ -32,6 +32,18 @@ main {
 .ant-btn,
 a {
   font-family: var(--font-family) !important;
+}
+
+p {
+  font-family: var(--font-family) !important;
+  color: #374151;
+
+}
+
+ul {
+  font-family: var(--font-family) !important;
+  color: #374151;
+
 }
 
 .header {
@@ -112,7 +124,7 @@ a {
   padding: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .education-card {
@@ -126,7 +138,7 @@ a {
   padding: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .custom-tabs .ant-card-body div div {
@@ -240,13 +252,33 @@ i:hover {
   color: black
 }
 
-.text-content{
+.text-content {
   font-size: 16px;
   color: #374151;
 }
 
-.project-img{
+.project-img {
   width: 100%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+
+.linkButton {
+  background-color: black;
+  font-size: 14px;
+  padding: 4px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+}
+
+.linkButton:hover {
+  background-color: #8f8e8e;
+  font-size: 14px;
+  padding: 4px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
 }

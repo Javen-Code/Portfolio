@@ -31,7 +31,7 @@ function Footer() {
         lineHeight: 1,
       }}
     >
-    Last Updated on 15 May 2025
+    Last Updated on 22 May 2025
     </h5>
   </div>
   <div

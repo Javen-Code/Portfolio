@@ -23,6 +23,8 @@ const portfolioData = {
       ],
       logo:
         "https://pbs.twimg.com/profile_images/582710143407628288/KnH1av6w_400x400.jpg",
+      linkName: "Academic Transcript",
+      link: "/Academic Transcript.pdf"
     },
     {
       id: "edu2",
@@ -57,7 +59,7 @@ const projects = [
     title: "Video Deepfake Detector",
     description:
       "A deepfake detection application that leverages a hybrid CNN-RNN model to analyze live or uploaded videos and classify them.",
-    image: "./deepfakeDetect1.jpg",
+    image: "/deepfakeDetect1.jpg",
     tags: ["Flask", "Python", "TensorFlow", "ChatGPT API"],
     buttonLink: "/projects/Video-Deepfake-Detector",
   },
@@ -66,7 +68,7 @@ const projects = [
     title: "Bussing",
     description:
       "Bussing is an Android app that provides users with the up-to-date Singapore bus arrival times and a map for easy bus stop location visualization.",
-    image: "./busTiming1.png",
+    image: "/busTiming1.png",
     tags: ["Android Studio", "Java", "Google Maps API", "LTA DataMall API"],
     buttonLink: "/projects/Bussing",
   },
@@ -103,10 +105,9 @@ const Portfolio = () => {
               <Title style={{ marginTop: "20px" }} level={1}>
                 hey, i'm javen&#128512;
               </Title>
-              <p style={{ fontWeight: "lighter", fontSize: "17.5px" }}>a 21-year-old poly graduate from Singapore 🇸🇬</p>
-              <p style={{ fontWeight: "lighter", fontSize: "17.5px" }}>i enjoy coding, overthinking and watching my pet shrimps &#129424;</p>
-
-              <div style={{ display: "flex", gap: "15px", marginTop:"30px"}}>
+              <p style={{ fontSize: "17.5px"}}>a 21-year-old poly graduate from Singapore 🇸🇬</p>
+              <p style={{fontSize: "17.5px"}}>i enjoy coding, overthinking and watching my pet shrimps &#129424;</p>
+              <div style={{ display: "flex", gap: "15px", marginTop: "30px" }}>
 
                 <a
                   href="https://www.linkedin.com/in/javengoh/"
@@ -158,7 +159,7 @@ const Portfolio = () => {
             </div>
 
             <div className="right-section" style={{ position: "relative" }}>
-              <img className="profile-img" width={"200px"} src="./profilePic.png" />
+              <img className="profile-img" width={"200px"} src="/profilePic.png" />
               <span
                 className="waving-hand"
                 style={{ fontSize: "100px", position: "absolute", color: "black" }}
@@ -208,7 +209,7 @@ const Portfolio = () => {
                       height: "100%",
                       marginLeft: "24.5px",
                       backgroundColor: "#cfd1d3",
-                      marginTop: "-10px",
+                      marginTop: "-20px",
                     }}
                   ></div>
                   <div style={{ display: "flex" }}>
@@ -228,16 +229,28 @@ const Portfolio = () => {
                         {edu.school}
                       </Title>
                       <Text type="secondary">{edu.period}</Text>
-                      <p>
-                        <strong>{edu.degree}</strong>
+                      <p style={{color:"#000000", fontWeight:"bold"}}>
+                        {edu.degree}
                       </p>
                     </div>
                   </div>
-                  <ul style={{ textAlign: "left", marginLeft: "30px" }}>
+                  <ul style={{ textAlign: "left", marginLeft: "40px", marginTop: "-10px", }}>
                     {edu.description.map((desc, i) => (
                       <li key={i}>{desc}</li>
                     ))}
                   </ul>
+                  <div
+                    style={{
+                      marginLeft: "65px",
+                      marginTop: "-5px",
+                    }}
+                  >
+                  {edu.link && edu.linkName && (
+                      <a href={edu.link} target="_blank" rel="noopener noreferrer" className="linkButton">
+                        &#128205;{edu.linkName}
+                      </a>
+                  )}
+                  </div>
                 </Card>
               ))}
             {activeTab === "work" &&
@@ -250,7 +263,7 @@ const Portfolio = () => {
                       height: "100%",
                       marginLeft: "24.5px",
                       backgroundColor: "#cfd1d3",
-                      marginTop: "-10px",
+                      marginTop: "-20px",
                     }}
                   ></div>
                   <div style={{ display: "flex" }}>
@@ -270,12 +283,12 @@ const Portfolio = () => {
                         {work.company}
                       </Title>
                       <Text type="secondary">{work.period}</Text>
-                      <p>
-                        <strong>{work.role}</strong>
+                      <p style={{color:"#000000", fontWeight:"bold"}}>
+                        {work.role}
                       </p>
                     </div>
                   </div>
-                  <ul style={{ textAlign: "left", marginLeft: "30px" }}>
+                  <ul style={{ textAlign: "left", marginLeft: "40px", marginTop: "-10px", }}>
                     {work.description.map((desc, i) => (
                       <li key={i}>{desc}</li>
                     ))}
@@ -289,7 +302,7 @@ const Portfolio = () => {
             <div style={{ display: "flex", width: "100%", marginBottom: "10px" }}>
               <h1 style={{ width: "85%" }}>featured projects</h1>
               <Link
-                style={{ fontSize: "15px", width: "15%", textAlign: "right", color: "#8f8e8e", fontWeight:"lighter"}}
+                style={{ fontSize: "15px", width: "15%", textAlign: "right", color: "#8f8e8e", fontWeight: "lighter" }}
                 href="/projects"
               >
                 view more →
